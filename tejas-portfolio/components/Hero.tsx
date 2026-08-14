@@ -28,7 +28,8 @@ export default function Hero() {
           </h2>
 
           <p className="mt-8 text-gray-400 text-lg leading-8 max-w-xl">
-            Engineering Aspirant • Developer • Builder
+           IIM Lucknow • AI & Business Analytics
+Developer • Builder • Building in Public
             <br />
             <br />
             Documenting my journey from student to software engineer,
