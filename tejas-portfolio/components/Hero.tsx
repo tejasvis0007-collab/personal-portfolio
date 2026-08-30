@@ -55,6 +55,26 @@ Developer • Builder • Building in Public
             >
               GitHub
             </a>
+            <a
+  href="https://www.linkedin.com/in/tejas-ms007"
+  target="_blank"
+  rel="noopener noreferrer"
+  className="
+    border
+    border-gray-700
+    px-8
+    py-4
+    rounded-full
+    transition-all
+    duration-300
+    hover:border-white
+    hover:bg-white
+    hover:text-black
+    hover:scale-105
+  "
+>
+  LinkedIn
+</a>
 
           </div>
 
