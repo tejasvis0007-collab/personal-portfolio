@@ -1,67 +1,15 @@
+const links = ["about", "projects", "contact"];
+
 export default function Navbar() {
   return (
-    <nav className="fixed top-0 left-0 w-full z-50 backdrop-blur-xl bg-black/30 border-b border-white/10">
-
-      <div className="max-w-7xl mx-auto flex items-center justify-between px-8 py-5">
-
-        {/* Logo */}
-
-        <a
-          href="#"
-          className="text-2xl font-black tracking-wide hover:text-green-400 transition"
-        >
-          Tejas<span className="text-green-400">.</span>
-        </a>
-
-        {/* Navigation */}
-
-        <div className="hidden md:flex items-center gap-10 text-gray-300">
-
-          <a
-            href="#about"
-            className="relative group transition"
-          >
-            About
-
-            <span className="absolute left-0 -bottom-1 h-[2px] w-0 bg-green-400 transition-all duration-300 group-hover:w-full"></span>
-
-          </a>
-
-          <a
-            href="#projects"
-            className="relative group transition"
-          >
-            Projects
-
-            <span className="absolute left-0 -bottom-1 h-[2px] w-0 bg-green-400 transition-all duration-300 group-hover:w-full"></span>
-
-          </a>
-
-          <a
-            href="#contact"
-            className="relative group transition"
-          >
-            Contact
-
-            <span className="absolute left-0 -bottom-1 h-[2px] w-0 bg-green-400 transition-all duration-300 group-hover:w-full"></span>
-
-          </a>
-
+    <nav className="fixed left-0 top-0 z-50 w-full px-4 pt-4 sm:px-6">
+      <div className="mx-auto flex max-w-7xl items-center justify-between rounded-full border border-white/10 bg-black/35 px-4 py-3 shadow-2xl shadow-black/30 backdrop-blur-2xl sm:px-6">
+        <a href="#home" className="group text-lg font-black tracking-tight sm:text-2xl">Tejas<span className="text-emerald-300 transition group-hover:text-teal-200">.</span></a>
+        <div className="hidden items-center gap-2 rounded-full border border-white/10 bg-white/[0.04] p-1 md:flex">
+          {links.map((link) => <a key={link} href={`#${link}`} className="rounded-full px-5 py-2 text-sm font-medium capitalize text-slate-300 transition hover:bg-white/10 hover:text-white">{link}</a>)}
         </div>
-
-        {/* GitHub Button */}
-
-        <a
-          href="https://github.com/"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="hidden md:block border border-green-400 text-green-400 px-5 py-2 rounded-full hover:bg-green-400 hover:text-black transition-all duration-300"
-        >
-          GitHub
-        </a>
-
+        <a href="https://github.com/tejasvis0007-collab" target="_blank" rel="noopener noreferrer" className="rounded-full border border-emerald-300/40 bg-emerald-300/10 px-4 py-2 text-sm font-semibold text-emerald-100 transition hover:-translate-y-0.5 hover:border-emerald-200 hover:bg-emerald-300 hover:text-black sm:px-5">GitHub</a>
       </div>
-
     </nav>
   );
 }
